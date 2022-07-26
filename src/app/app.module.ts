@@ -16,15 +16,16 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {FormsModule} from '@angular/forms';
 
 import {HeaderComponent} from './views/components/template/header/header.component';
 import {FooterComponent} from './views/components/template/footer/footer.component';
 import {NavComponent} from './views/components/template/nav/nav.component';
-import { HomeComponent } from './views/components/home/home.component';
-import { TecnicoReadComponent } from './views/components/tecnico/tecnico-read/tecnico-read.component';
+import {HomeComponent} from './views/components/home/home.component';
+import {TecnicoReadComponent} from './views/components/tecnico/tecnico-read/tecnico-read.component';
 import {MatPaginatorModule} from "@angular/material/paginator";
-import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-create/tecnico-create.component';
+import {TecnicoCreateComponent} from './views/components/tecnico/tecnico-create/tecnico-create.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-creat
         MatInputModule,
         MatDatepickerModule,
         FormsModule,
-        MatPaginatorModule
+        MatPaginatorModule,
+        MatSnackBarModule
     ],
     providers: [],
     bootstrap: [AppComponent]
