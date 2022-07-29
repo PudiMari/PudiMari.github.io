@@ -1,4 +1,4 @@
-<form class="form">
+<form class="form mat-elevation-z8">
     <h1>Cadastro de Técnico</h1>
     <mat-form-field class="full-width" appearance="fill">
         <mat-label>Nome</mat-label>
@@ -21,8 +21,8 @@
         <mat-error *ngIf="telefone.invalid">{{ errorValidTelefone() }}</mat-error>
     </mat-form-field>
     <!--suppress TypeScriptValidateTypes -->
-    <button (click)="create()" [disabled]="errorValidNome() || errorValidCpf() || errorValidTelefone()"
+    <button class="mat-elevation-z8" (click)="create()" [disabled]="errorValidNome() || errorValidCpf() || errorValidTelefone()"
             mat-raised-button color="primary">Criar
     </button>
-    <button (click)="cancel()" mat-raised-button>Cancelar</button>
+    <button class="mat-elevation-z8" (click)="cancel()" mat-raised-button>Cancelar</button>
 </form>
