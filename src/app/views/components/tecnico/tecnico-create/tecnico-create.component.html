@@ -2,18 +2,27 @@
     <h1>Cadastro de Técnico</h1>
     <mat-form-field class="full-width" appearance="fill">
         <mat-label>Nome</mat-label>
-        <input matInput placeholder="Ex. João da Silva">
+        <input [(ngModel)]="tecnico.nome" [formControl]="nome" required name="nome" matInput maxlength="100"
+               placeholder="Ex. João da Silva">
+        <mat-error *ngIf="nome.invalid">{{ errorValidNome() }}</mat-error>
     </mat-form-field>
 
     <mat-form-field class="full-width" appearance="fill">
         <mat-label>CPF</mat-label>
-        <input matInput placeholder="Ex. 000.000.000-00">
+        <input [(ngModel)]="tecnico.cpf" [formControl]="cpf" required name="cpf" matInput maxlength="15"
+               placeholder="Ex. 000.000.000-00">
+        <mat-error *ngIf="cpf.invalid">{{ errorValidCpf() }}</mat-error>
     </mat-form-field>
 
     <mat-form-field class="full-width" appearance="fill">
         <mat-label>Telefone</mat-label>
-        <input matInput placeholder="Ex. (00) 90000-0000">
+        <input [(ngModel)]="tecnico.telefone" [formControl]="telefone" required name="telefone" matInput maxlength="18"
+               placeholder="Ex. (00) 90000-0000">
+        <mat-error *ngIf="telefone.invalid">{{ errorValidTelefone() }}</mat-error>
     </mat-form-field>
-    <button (click)="create()" mat-raised-button color="primary">Criar</button>
+    <!--suppress TypeScriptValidateTypes -->
+    <button (click)="create()" [disabled]="errorValidNome() || errorValidCpf() || errorValidTelefone()"
+            mat-raised-button color="primary">Criar
+    </button>
     <button (click)="cancel()" mat-raised-button>Cancelar</button>
 </form>
