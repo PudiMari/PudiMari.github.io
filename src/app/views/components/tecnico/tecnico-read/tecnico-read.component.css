@@ -12,6 +12,7 @@
 .create button{
     width: 30%;
     margin: 1rem auto;
+    align-self: center;
 }
 
 .container {
@@ -24,7 +25,19 @@ table{
     width: 100%;
 }
 
+table th{
+    text-align: center;
+}
+
+table td{
+    text-align: center;
+}
+
 #edit{
     color: #9c43d2;
+}
+
+#delete{
+    color: #dc4d53;
 }
 
