@@ -28,6 +28,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {TecnicoCreateComponent} from './views/components/tecnico/tecnico-create/tecnico-create.component';
 import { TecnicoUpdateComponent } from './views/components/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delete/tecnico-delete.component';
+import { ClienteReadComponent } from './views/components/cliente/cliente-read/cliente-read.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delet
         TecnicoReadComponent,
         TecnicoCreateComponent,
         TecnicoUpdateComponent,
-        TecnicoDeleteComponent
+        TecnicoDeleteComponent,
+        ClienteReadComponent
     ],
     imports: [
         BrowserModule,
