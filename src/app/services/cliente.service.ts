@@ -38,6 +38,11 @@ export class ClienteService {
 
     }
 
+    delete(id: any): Observable<void> {
+        const url = `${this.baseUrl}/clientes/${id}`;
+        return this.http.delete<void>(url);
+    }
+
     message(msg: String): void {
         this.snack.open(`${msg}`, 'OK', {
             horizontalPosition: 'end',
