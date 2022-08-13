@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'clientes/create',
     component: ClienteCreateComponent
   },
+  {
+    path: 'clientes/update/:id',
+    component: ClienteUpdateComponent
+  }
 ];
 
 @NgModule({
