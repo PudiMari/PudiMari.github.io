@@ -41,3 +41,15 @@ table td {
     color: #ffffff;
 }
 
+td.baixa{
+    color: green;
+}
+
+td.media{
+    color: #d5d50f;
+}
+
+td.alta{
+    color: rgb(196, 15, 15);
+}
+
