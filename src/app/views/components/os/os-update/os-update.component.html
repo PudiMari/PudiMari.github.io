@@ -1,6 +1,6 @@
 <div class="container">
 
-    <h1>Cadastro de Ordem de Serviço</h1>
+    <h1>Atualização de Ordem de Serviço</h1>
 
     <div class="labels">
         <mat-form-field appearance="fill">
@@ -28,7 +28,7 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Selecione um prioridade</mat-label>
-            <mat-select [(value)]="os.prioridade">
+            <mat-select [(ngModel)]="os.prioridade" [(value)]="os.prioridade">
                 <mat-option value="0">Baixa</mat-option>
                 <mat-option value="1">Média</mat-option>
                 <mat-option value="2">Alta</mat-option>
@@ -43,7 +43,7 @@
         </mat-form-field>
     </form>
 
-    <button (click)="create()" class="mat-elevation-z8" mat-raised-button color="primary">CRIAR</button>
+    <button (click)="update()" class="mat-elevation-z8" mat-raised-button color="primary">ATUALIZAR</button>
     <button (click)="cancel()" class="mat-elevation-z8" mat-raised-button>CANCELAR</button>
 
 </div>
