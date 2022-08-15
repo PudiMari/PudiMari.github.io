@@ -27,7 +27,7 @@
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-            <mat-label>Selecione um prioridade</mat-label>
+            <mat-label [(ngModel)]="os.prioridade">Selecione um prioridade</mat-label>
             <mat-select [(ngModel)]="os.prioridade" [(value)]="os.prioridade">
                 <mat-option value="0">Baixa</mat-option>
                 <mat-option value="1">Média</mat-option>
